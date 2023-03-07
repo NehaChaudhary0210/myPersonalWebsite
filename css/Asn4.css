@@ -1,0 +1,26 @@
+body{
+    background-color: #b4f3f5;
+}
+h1{
+text-align: center;
+color:#2F58CD;
+font-family: Georgia, serif;
+}
+.bgcolor{
+    background-color: rgb(21, 165, 165);
+}
+
+.box{
+    border-style: solid;
+    border-color: black #3E54AC;
+    border-radius: 10px;
+    padding: 10px 5px 20px 5px;
+    margin-bottom: 40px;
+}
+.foot{
+    text-align: center;
+    font-style: italic;}
+
+#category{
+    text-align: center;
+}

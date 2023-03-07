@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>This is the contact form page</h1>
+    <form>
+        <fieldset>
+            <legend>Basic Info</legend>
+            <label for="full-name">Full Name</label>
+        <input type="text" name="full-name" autofocus placeholder="enter your name" required><br>
+        <label for="email-info">Email</label>
+        <input type="email" name="email-info" placeholder="enter your email" required ><br>
+        <label for="age-info">Age</label>
+        <input type="number" name="age-info"  min="15" max="50" required><br>
+        <label for="phone-info">phone number</label>
+        <input type="tel" name="phone-info" required><br>
+        <label for="password-info">password</label>
+        <input type="password" name="password-info" required><br>
+        <label for="contact-info">Reason for contact</label>
+        <select>
+            <optgroup label="Business"><option value="job related">job related</option>
+                <option value="freelance project">freelance project</option>
+                <option value="business opportunity">business opportunity</option>
+            </optgroup>
+            <optgroup label="Personal">
+                <option value="friendly hello">friendly hello</option>
+                <option value="I am an old friend">I am an old friend</option>
+            </optgroup>
+            
+        </select><br>
+        <label for="browser">Choose your browser from the list</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Edge">Edge</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Mozilla">Mozilla</option>
+            <option value="Brave">Brave</option>
+        </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <h4>What is your favorite technology</h4>
+            
+            <input type="radio" name="technology">
+            <label for="html-info">Html</label><br>
+            
+            <input type="radio" name="technology">
+            <label for="css-info">Css</label><br>
+            
+            <input type="radio" name="technology">
+            <label for="js-info">Javascript</label><br>
+
+            <h4>What technologies are u interested in learning</h4>
+            <input type="checkbox" name="technology1">
+            <label for="technology1">React Js</label><br>
+            <input type="checkbox" name="technology2">
+            <label for="technology2">Node Js</label><br>
+            <input type="checkbox" name="technology3">
+            <label for="technology3">Css</label><br>
+            <label for="message">Your message</label><br>
+            <textarea name="message" cols="50" rows="10"></textarea>
+        </fieldset>
+        
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <a href="index.html">Go to the main page</a>
+</body>
+</html>
